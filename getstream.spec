@@ -2,7 +2,7 @@
 Summary:	DVB streaming into individual multicast groups
 Name:		getstream
 Version:	2.0.%{snap}
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://silicon-verl.de/home/flo/projects/streaming/download/%{name}2-%{snap}.tgz
@@ -28,7 +28,7 @@ budget card. It's features are:
 
 %build
 %{__make} \
-	CFLAGS="-I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall %{rpmcflags}"
+	CFLAGS="-I%{_includedir}/glib-2.0 -I%{_libdir}/glib-2.0/include -Wall %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
