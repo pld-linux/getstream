@@ -1,0 +1,116 @@
+diff -ur getstream2-20100616/config.c getstream2-20100616-glib/config.c
+--- getstream2-20100616/config.c	2010-06-16 14:14:08.000000000 +0200
++++ getstream2-20100616-glib/config.c	2017-04-04 20:12:50.306602973 +0200
+@@ -10,7 +10,7 @@
+ #include <strings.h>
+ #include <string.h>
+ 
+-#include <glib/glist.h>
++#include <glib.h>
+ 
+ #include "config.h"
+ #include "libconf.h"
+Only in getstream2-20100616-glib: config.c~
+diff -ur getstream2-20100616/config.h getstream2-20100616-glib/config.h
+--- getstream2-20100616/config.h	2010-06-16 14:14:08.000000000 +0200
++++ getstream2-20100616-glib/config.h	2017-04-04 20:12:31.829710464 +0200
+@@ -1,5 +1,5 @@
+ 
+-#include <glib/glist.h>
++#include <glib.h>
+ 
+ #include "getstream.h"
+ 
+Only in getstream2-20100616-glib: config.h~
+Only in getstream2-20100616-glib: config.o
+Only in getstream2-20100616-glib: crc32.o
+Only in getstream2-20100616-glib: dmx.o
+Only in getstream2-20100616-glib: dvr.o
+Only in getstream2-20100616-glib: fe.o
+Only in getstream2-20100616-glib: getstream
+diff -ur getstream2-20100616/getstream.h getstream2-20100616-glib/getstream.h
+--- getstream2-20100616/getstream.h	2010-06-16 14:14:08.000000000 +0200
++++ getstream2-20100616-glib/getstream.h	2017-04-04 20:11:04.915315383 +0200
+@@ -10,7 +10,7 @@
+ #include <linux/dvb/frontend.h>
+ 
+ #include <event.h>
+-#include <glib/glist.h>
++#include <glib.h>
+ 
+ #include "sap.h"
+ #include "psi.h"
+Only in getstream2-20100616-glib: getstream.h~
+Only in getstream2-20100616-glib: getstream.o
+Only in getstream2-20100616-glib: input.o
+Only in getstream2-20100616-glib: libconf.o
+diff -ur getstream2-20100616/libhttp.c getstream2-20100616-glib/libhttp.c
+--- getstream2-20100616/libhttp.c	2010-06-16 14:14:08.000000000 +0200
++++ getstream2-20100616-glib/libhttp.c	2017-04-04 20:13:00.096722656 +0200
+@@ -13,7 +13,7 @@
+ #include <stdio.h>
+ #include <stdarg.h>
+ 
+-#include <glib/glist.h>
++#include <glib.h>
+ 
+ #include "libhttp.h"
+ 
+Only in getstream2-20100616-glib: libhttp.c~
+diff -ur getstream2-20100616/libhttp.h getstream2-20100616-glib/libhttp.h
+--- getstream2-20100616/libhttp.h	2010-06-16 14:14:08.000000000 +0200
++++ getstream2-20100616-glib/libhttp.h	2017-04-04 20:12:13.836157236 +0200
+@@ -7,8 +7,7 @@
+ #include <netinet/in.h>
+ #include <event.h>
+ 
+-#include <glib/glist.h>
+-#include <glib/ghash.h>
++#include <glib.h>
+ 
+ 
+ #define MAX_HEADER_SIZE	3000
+Only in getstream2-20100616-glib: libhttp.h~
+Only in getstream2-20100616-glib: libhttp.o
+Only in getstream2-20100616-glib: logging.o
+diff -ur getstream2-20100616/output.h getstream2-20100616-glib/output.h
+--- getstream2-20100616/output.h	2010-06-16 14:14:08.000000000 +0200
++++ getstream2-20100616-glib/output.h	2017-04-04 20:13:14.073560207 +0200
+@@ -4,7 +4,7 @@
+ #include "getstream.h"
+ #include "libhttp.h"
+ 
+-#include <glib/glist.h>
++#include <glib.h>
+ 
+ #include <event.h>
+ 
+Only in getstream2-20100616-glib: output.h~
+diff -ur getstream2-20100616/output_http.c getstream2-20100616-glib/output_http.c
+--- getstream2-20100616/output_http.c	2010-06-16 14:14:08.000000000 +0200
++++ getstream2-20100616-glib/output_http.c	2017-04-04 20:13:09.443503596 +0200
+@@ -5,7 +5,7 @@
+ #include <string.h>
+ #include <stdio.h>
+ 
+-#include <glib/glist.h>
++#include <glib.h>
+ 
+ #include "output.h"
+ #include "simplebuffer.h"
+Only in getstream2-20100616-glib: output_http.c~
+Only in getstream2-20100616-glib: output_http.o
+Only in getstream2-20100616-glib: output.o
+Only in getstream2-20100616-glib: output_pipe.o
+Only in getstream2-20100616-glib: output_rtp.o
+Only in getstream2-20100616-glib: output_udp.o
+Only in getstream2-20100616-glib: pat.o
+Only in getstream2-20100616-glib: pmt.o
+Only in getstream2-20100616-glib: psi.o
+Only in getstream2-20100616-glib: sap.o
+Only in getstream2-20100616-glib: simplebuffer.o
+Only in getstream2-20100616-glib: socket.o
+Only in getstream2-20100616-glib: stream.o
+Only in getstream2-20100616-glib: tsdecode
+Only in getstream2-20100616-glib: tsdecode.o
+Only in getstream2-20100616-glib: util.o

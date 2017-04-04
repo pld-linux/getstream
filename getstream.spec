@@ -2,11 +2,12 @@
 Summary:	DVB streaming into individual multicast groups
 Name:		getstream
 Version:	2.0.%{snap}
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://silicon-verl.de/home/flo/projects/streaming/download/%{name}2-%{snap}.tgz
 # Source0-md5:	5a3956f77902291cad09d15e5896d99f
+Patch0:		glib2.patch
 URL:		http://silicon-verl.de/home/flo/projects/streaming/
 BuildRequires:	glib2-devel
 BuildRequires:	libevent-devel
@@ -25,6 +26,7 @@ budget card. It's features are:
 
 %prep
 %setup -q -n %{name}2-%{snap}
+%patch0 -p1
 
 %build
 %{__make} \
