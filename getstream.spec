@@ -2,7 +2,7 @@
 Summary:	DVB streaming into individual multicast groups
 Name:		getstream
 Version:	2.0.%{snap}
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://silicon-verl.de/home/flo/projects/streaming/download/%{name}2-%{snap}.tgz
