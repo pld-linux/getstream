@@ -26,7 +26,7 @@ budget card. It's features are:
 
 %prep
 %setup -q -n %{name}2-%{snap}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} \
